@@ -97,7 +97,7 @@ export default function Header() {
                 {t('footer.contact')}
               </Button>
               <a
-                href="tel:+971501109917"
+                href="tel:+4917618182018"
                 className={`p-2 rounded-full transition-colors ${
                   isScrolled ? 'bg-primary/10 hover:bg-primary/20' : 'bg-white/20 hover:bg-white/30'
                 }`}

@@ -81,7 +81,7 @@ export default function HeroSection() {
             {/* Social/Contact Quick Links */}
             <div className="mt-12 flex items-center justify-center space-x-6">
               <a
-                href="https://wa.me/971501109917"
+                href="https://wa.me/4917618182018"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors"
