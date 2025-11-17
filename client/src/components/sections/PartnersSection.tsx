@@ -3,14 +3,12 @@ import { useLanguage } from '@/contexts/LanguageContext';
 export default function PartnersSection() {
   const { t, language } = useLanguage();
 
-  // Partner logos with luxury styling
+  // Partner logos with real developer logos
   const partners = [
-    { name: 'Emaar Properties', initials: 'EM', color: 'from-primary to-primary/70' },
-    { name: 'DAMAC Properties', initials: 'DA', color: 'from-primary/80 to-primary/50' },
-    { name: 'Nakheel', initials: 'NK', color: 'from-primary/70 to-primary/40' },
-    { name: 'Meraas', initials: 'MR', color: 'from-primary/60 to-primary/30' },
-    { name: 'Dubai Properties', initials: 'DP', color: 'from-primary/50 to-primary/20' },
-    { name: 'Sobha Realty', initials: 'SR', color: 'from-primary/40 to-primary/10' },
+    { name: 'Emaar Properties', logo: '/emaar-logo.png' },
+    { name: 'DAMAC Properties', logo: '/damac-logo.png' },
+    { name: 'Nakheel', logo: '/nakheel-logo.png' },
+    { name: 'Azizi Developments', logo: '/azizi-logo.png' },
   ];
 
   return (
@@ -37,18 +35,18 @@ export default function PartnersSection() {
           </div>
 
           {/* Partners Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {partners.map((partner, index) => (
               <div
                 key={index}
                 className="group bg-background rounded-2xl p-8 flex flex-col items-center justify-center hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-border min-h-[200px]"
               >
-                {/* Logo Placeholder with Gradient */}
-                <div className={`w-24 h-24 rounded-xl bg-gradient-to-br ${partner.color} flex items-center justify-center mb-4 shadow-lg group-hover:shadow-xl transition-shadow`}>
-                  <span className="text-2xl font-bold text-white">
-                    {partner.initials}
-                  </span>
-                </div>
+                {/* Real Logo */}
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name}
+                  className="h-20 w-auto object-contain mb-4 group-hover:scale-110 transition-transform duration-300"
+                />
 
                 {/* Partner Name */}
                 <h3 className="text-lg font-bold text-foreground text-center">

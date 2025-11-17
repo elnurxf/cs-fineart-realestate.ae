@@ -49,7 +49,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <h1 className="text-xl font-bold text-foreground">Fine Art Real Estate</h1>
+            <img src="/fa-logo.svg" alt="Fine Art Real Estate" className="h-16 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
