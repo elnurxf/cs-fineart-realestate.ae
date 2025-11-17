@@ -7,7 +7,7 @@ export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
 
   // WhatsApp phone number (with country code, no + or spaces)
-  const phoneNumber = '971501109917'; // Fine Art Real Estate WhatsApp number
+  const phoneNumber = '4917618182018'; // Fine Art Real Estate WhatsApp number
 
   // Multilingual messages
   const messages = {
