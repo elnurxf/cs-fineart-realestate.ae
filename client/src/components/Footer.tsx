@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Company Info */}
             <div className="lg:col-span-1">
-              <img src={APP_LOGO} alt="Fine Art Real Estate" className="h-12 mb-4" />
+              {/*<img src={APP_LOGO} alt="Fine Art Real Estate" className="h-12 mb-4" />*/}
               <h3 className="text-xl font-bold mb-4">Fine Art Real Estate</h3>
               <p className="text-background/70 mb-4">
                 {language === 'ru' 

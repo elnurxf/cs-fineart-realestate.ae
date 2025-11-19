@@ -14,7 +14,7 @@ export default function AboutSection() {
                 <img
                   src="/rauf-najafov.jpg"
                   alt={t('about.name')}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               {/* Decorative Element */}
