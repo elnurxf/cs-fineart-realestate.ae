@@ -5,7 +5,6 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
-import WhatsAppWidget from "./components/WhatsAppWidget";
 import Home from "./pages/Home";
 
 function Router() {
@@ -33,7 +32,6 @@ function App() {
         <LanguageProvider>
           <TooltipProvider>
             <Toaster />
-            <WhatsAppWidget />
             <Router />
           </TooltipProvider>
         </LanguageProvider>
