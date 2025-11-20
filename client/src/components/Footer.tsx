@@ -47,7 +47,7 @@ export default function Footer() {
               {/* Social Links */}
               <div className="flex items-center space-x-4">
                 <a
-                  href="https://wa.me/971501109917"
+                  href="https://wa.me/971589559060"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors"
@@ -55,8 +55,7 @@ export default function Footer() {
                   <Phone className="h-5 w-5 text-primary-foreground" />
                 </a>
                 <a
-                  href="https://t.me/RaufNajafov"
-                  target="_blank"
+                  href="mailto:info@fineart-realestate.ae"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors"
                 >
@@ -84,8 +83,8 @@ export default function Footer() {
                   <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-background/70 text-sm">Phone</p>
-                    <a href="tel:+971501109917" className="text-background/90 hover:text-primary transition-colors">
-                      +971 50 110 9917
+                    <a href="tel:+971589559060" className="text-background/90 hover:text-primary transition-colors">
+                      +971 58 955 9060
                     </a>
                   </div>
                 </div>

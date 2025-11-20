@@ -155,7 +155,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.whyDubai': 'ПОЧЕМУ ДУБАЙ?',
     'nav.partners': 'ПАРТНЕРЫ',
     'nav.properties': 'НЕДВИЖИМОСТЬ',
-    'nav.faq': 'ВОПРОСЫ И ОТВЕТЫ',
+    'nav.faq': 'FAQ',
     'nav.reviews': 'ОТЗЫВЫ',
     
     // Hero Section

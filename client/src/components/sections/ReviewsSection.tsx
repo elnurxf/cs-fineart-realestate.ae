@@ -104,21 +104,15 @@ export default function ReviewsSection() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
             <div className="p-6 bg-background rounded-xl">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary mb-2">5+</div>
               <div className="text-sm text-muted-foreground">
                 {language === 'ru' ? 'Довольных клиентов' : language === 'de' ? 'Zufriedene Kunden' : 'Happy Clients'}
               </div>
             </div>
             <div className="p-6 bg-background rounded-xl">
-              <div className="text-4xl font-bold text-primary mb-2">4.9</div>
-              <div className="text-sm text-muted-foreground">
-                {language === 'ru' ? 'Средний рейтинг' : language === 'de' ? 'Durchschnittsbewertung' : 'Average Rating'}
-              </div>
-            </div>
-            <div className="p-6 bg-background rounded-xl">
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-4xl font-bold text-primary mb-2">250+</div>
               <div className="text-sm text-muted-foreground">
                 {language === 'ru' ? 'Лет опыта' : language === 'de' ? 'Jahre Erfahrung' : 'Years Experience'}
               </div>

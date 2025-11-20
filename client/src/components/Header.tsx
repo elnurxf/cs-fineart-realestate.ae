@@ -53,12 +53,12 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden lg:flex items-center space-x-1 whitespace-nowrap overflow-x-auto">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                className={`mx-2 my-2 text-sm font-medium transition-colors ${
                   isScrolled ? 'text-foreground hover:text-primary' : 'text-foreground/90 hover:text-foreground'
                 }`}
               >
@@ -97,7 +97,7 @@ export default function Header() {
                 {t('footer.contact')}
               </Button>
               <a
-                href="tel:+971501109917"
+                href="tel:+971589559060"
                 className={`p-2 rounded-full transition-colors ${
                   isScrolled ? 'bg-primary/10 hover:bg-primary/20' : 'bg-white/20 hover:bg-white/30'
                 }`}

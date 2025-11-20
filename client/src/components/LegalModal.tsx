@@ -198,15 +198,15 @@ export default function LegalModal({ type, open, onOpenChange }: LegalModalProps
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center px-4 py-8 sm:py-12">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/50 backdrop-blur-sm z-[999]"
         onClick={() => onOpenChange(false)}
       />
 
       {/* Modal Content */}
-      <div className="relative bg-background rounded-2xl shadow-2xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+      <div className="relative z-[1000] bg-background rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="sticky top-0 bg-background border-b border-border px-6 py-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold text-primary">{legalContent.title}</h2>
