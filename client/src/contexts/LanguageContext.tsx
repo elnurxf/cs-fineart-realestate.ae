@@ -266,7 +266,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.coverage.handover': 'Übergabeprozess der Immobilie',
     'hero.coverage.services': 'After-Sales-Services, einschließlich Mietmanagement',
     'hero.closing': 'Ganz gleich, ob Sie ein Erstanleger oder ein erfahrener Käufer sind – wir nehmen uns die Zeit, Ihre Ziele zu verstehen und zeigen Ihnen die intelligentesten, sichersten und profitabelsten Strategien für Investitionen in den Immobilienmarkt Dubais.',
-    'hero.cta': 'Jetzt Gespräch buchen',
+    'hero.cta': 'Beratungsgespräch buchen',
     
     // About Us
     'about.name': 'Rauf Najafov',
