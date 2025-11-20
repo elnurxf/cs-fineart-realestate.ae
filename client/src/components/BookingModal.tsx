@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -19,6 +20,11 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const bookingContent = {
     en: {
@@ -58,6 +64,15 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
 
   const content = bookingContent[language] || bookingContent.en;
 
+  useEffect(() => {
+    if (!open || typeof document === 'undefined') return;
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [open]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -83,10 +98,10 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  if (!open) return null;
+  if (!isMounted || !open || typeof document === 'undefined') return null;
 
-  return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4 py-8 sm:py-12">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm z-[9998]"
@@ -211,6 +226,7 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
           </div>
         </form>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
