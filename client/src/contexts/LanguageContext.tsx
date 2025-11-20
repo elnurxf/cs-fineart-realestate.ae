@@ -58,7 +58,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 const translations: Record<Language, Record<string, string>> = {
   en: {
     // Navigation
-    'nav.zoom': 'YOUR PERSONAL ZOOM CALL',
+    'nav.zoom': 'YOUR PERSONAL CALL',
     'nav.about': 'ABOUT US',
     'nav.aboutShort': 'ABOUT',
     'nav.services': 'SERVICES',
@@ -72,13 +72,13 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Premium Real Estate in Dubai',
     'hero.subtitle': 'Discover Everything About Investing in Dubai',
     'hero.description': 'We provide you with a complete, step-by-step guide to investing in Dubai – fully customized to your individual goals.',
-    'hero.coverage.title': 'During your exclusive Zoom consultation, we will cover every essential aspect:',
+    'hero.coverage.title': 'During your exclusive consultation, we will cover every essential aspect:',
     'hero.coverage.visa': 'Visa procedures and residency options',
     'hero.coverage.escrow': 'Escrow accounts and secure transactions',
     'hero.coverage.handover': 'Property handover process',
     'hero.coverage.services': 'Post-purchase services, including rental management',
     'hero.closing': 'Whether you are a first-time investor or an experienced buyer, we take the time to understand your objectives and present the smartest, safest, and most profitable strategies for investing in Dubai real estate.',
-    'hero.cta': 'Book your personal Zoom call today',
+    'hero.cta': 'Book your personal call today',
     
     // About Us
     'about.name': 'Rauf Najafov',
@@ -152,7 +152,7 @@ const translations: Record<Language, Record<string, string>> = {
   },
   ru: {
     // Navigation
-    'nav.zoom': 'ВАША ПЕРСОНАЛЬНАЯ ZOOM-КОНСУЛЬТАЦИЯ',
+    'nav.zoom': 'ВАША ПЕРСОНАЛЬНАЯ КОНСУЛЬТАЦИЯ',
     'nav.about': 'О НАС',
     'nav.aboutShort': 'О НАС',
     'nav.services': 'УСЛУГИ',
@@ -166,7 +166,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Премиум недвижимость в Дубае',
     'hero.subtitle': 'Узнайте всё о вложениях в недвижимость Дубая',
     'hero.description': 'Мы предоставляем вам полный пошаговый гид по инвестированию в Дубай — полностью адаптированный под ваши индивидуальные цели.',
-    'hero.coverage.title': 'Во время вашей эксклюзивной Zoom-консультации мы подробно разберём:',
+    'hero.coverage.title': 'Во время вашей эксклюзивной консультации мы подробно разберём:',
     'hero.coverage.visa': 'Процедуры получения визы и варианты резидентства',
     'hero.coverage.escrow': 'Escrow-счета и безопасные транзакции',
     'hero.coverage.handover': 'Процесс передачи недвижимости',
@@ -246,7 +246,7 @@ const translations: Record<Language, Record<string, string>> = {
   },
   de: {
     // Navigation
-    'nav.zoom': 'IHR PERSÖNLICHES ZOOM-GESPRÄCH',
+    'nav.zoom': 'IHR PERSÖNLICHES GESPRÄCH',
     'nav.about': 'ÜBER UNS',
     'nav.aboutShort': 'ÜBER',
     'nav.services': 'LEISTUNGEN',
@@ -260,13 +260,13 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Premium Immobilien in Dubai',
     'hero.subtitle': 'Erfahren Sie alles über Immobilieninvestitionen in Dubai',
     'hero.description': 'Wir bieten Ihnen eine vollständige Schritt-für-Schritt-Anleitung für Investitionen in Dubai – individuell auf Ihre persönlichen Ziele zugeschnitten.',
-    'hero.coverage.title': 'In Ihrem exklusiven Zoom-Gespräch besprechen wir alle wichtigen Aspekte:',
+    'hero.coverage.title': 'In Ihrem exklusiven Gespräch besprechen wir alle wichtigen Aspekte:',
     'hero.coverage.visa': 'Visaverfahren und Aufenthaltsoptionen',
     'hero.coverage.escrow': 'Treuhandkonten (Escrow) und sichere Transaktionen',
     'hero.coverage.handover': 'Übergabeprozess der Immobilie',
     'hero.coverage.services': 'After-Sales-Services, einschließlich Mietmanagement',
     'hero.closing': 'Ganz gleich, ob Sie ein Erstanleger oder ein erfahrener Käufer sind – wir nehmen uns die Zeit, Ihre Ziele zu verstehen und zeigen Ihnen die intelligentesten, sichersten und profitabelsten Strategien für Investitionen in den Immobilienmarkt Dubais.',
-    'hero.cta': 'Buchen Sie Ihr persönliches Zoom-Gespräch noch heute',
+    'hero.cta': 'Buchen Sie Ihr persönliches Gespräch noch heute',
     
     // About Us
     'about.name': 'Rauf Najafov',
