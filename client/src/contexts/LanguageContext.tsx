@@ -86,6 +86,9 @@ const translations: Record<Language, Record<string, string>> = {
     'about.bio.p1': 'My journey has taken me from Azerbaijan through Germany to Dubai, where I founded Fine Art Real Estate. From the very beginning, I learned that true value comes from dedication, transparency, and perseverance.',
     'about.bio.p2': 'As a development engineer at Volkswagen and through my travels around the world, I not only experienced different cultures but also discovered my passion for the real estate market. Precision, quality, and reliability define every transaction I handle.',
     'about.bio.p3': 'At Fine Art Real Estate, our mission is clear: to help our clients realize their property dreams in Dubai - whether buying, selling, or investing. Transparency, trust, and personalized guidance are at the heart of everything we do.',
+    'about.stats.experience': 'Years Experience',
+    'about.stats.clients': 'Happy Clients',
+    'about.stats.transparency': 'Transparency',
     
     // Services
     'services.title': 'Full Range of Real Estate Services',
@@ -134,6 +137,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Reviews
     'reviews.title': 'Client Reviews',
+    'reviews.stats.success': 'Successful Deals',
     
     // Footer
     'footer.contact': 'Contact Us',
@@ -168,7 +172,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.coverage.handover': 'Процесс передачи недвижимости',
     'hero.coverage.services': 'Постпродажные услуги, включая управление арендой',
     'hero.closing': 'Будь вы начинающим инвестором или опытным покупателем, мы уделим время вашим целям и предложим самые умные, безопасные и прибыльные стратегии инвестирования в недвижимость Дубая.',
-    'hero.cta': 'Запишитесь на персональную Zoom-консультацию уже сегодня',
+    'hero.cta': 'Запишитесь на консультацию',
     
     // About Us
     'about.name': 'Рауф Наджафов',
@@ -176,6 +180,9 @@ const translations: Record<Language, Record<string, string>> = {
     'about.bio.p1': 'Мой путь прошёл из Азербайджана через Германию в Дубай, где я основал Fine Art Real Estate. С самого начала я понял, что настоящая ценность рождается из преданности делу, открытости и настойчивости.',
     'about.bio.p2': 'Работая инженером-разработчиком в Volkswagen и путешествуя по всему миру, я не только познакомился с различными культурами, но и открыл для себя страсть к рынку недвижимости. Точность, качество и надёжность - принципы, которыми я руководствуюсь в каждой сделке.',
     'about.bio.p3': 'В Fine Art Real Estate наша цель ясна: помогать нашим клиентам реализовывать их мечты о недвижимости в Дубае - будь то покупка, продажа или инвестиции. Прозрачность, доверие и персональное сопровождение для нас - это само собой разумеющееся.',
+    'about.stats.experience': 'Лет опыта',
+    'about.stats.clients': 'Довольных клиентов',
+    'about.stats.transparency': 'Прозрачность',
     
     // Services
     'services.title': 'Полный спектр услуг в сфере недвижимости',
@@ -224,6 +231,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Reviews
     'reviews.title': 'Отзывы клиентов',
+    'reviews.stats.success': 'Успешных сделок',
     
     // Footer
     'footer.contact': 'Свяжитесь с нами',
@@ -266,6 +274,9 @@ const translations: Record<Language, Record<string, string>> = {
     'about.bio.p1': 'Meine Reise führte mich von Aserbaidschan über Deutschland nach Dubai, wo ich Fine Art Real Estate gegründet habe. Von Anfang an habe ich gelernt, dass echte Werte aus Hingabe, Offenheit und Durchhaltevermögen entstehen.',
     'about.bio.p2': 'Als Entwicklungsingenieur bei Volkswagen und durch meine Reisen rund um die Welt habe ich nicht nur verschiedene Kulturen kennengelernt, sondern auch meine Leidenschaft für den Immobilienmarkt entdeckt. Präzision, Qualität und Verlässlichkeit prägen jede meiner Transaktionen.',
     'about.bio.p3': 'Bei Fine Art Real Estate ist unser Ziel klar: unsere Kunden dabei zu unterstützen, ihre Immobilienwünsche in Dubai zu verwirklichen -sei es beim Kauf, Verkauf oder Investieren. Transparenz, Vertrauen und persönliche Begleitung sind für uns selbstverständlich.',
+    'about.stats.experience': 'Jahre Erfahrung',
+    'about.stats.clients': 'Zufriedene Kunden',
+    'about.stats.transparency': 'Transparenz',
     
     // Services
     'services.title': 'Umfassende Immobilien-Dienstleistungen',
@@ -314,6 +325,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Reviews
     'reviews.title': 'Kundenbewertungen',
+    'reviews.stats.success': 'Erfolgreiche Transaktionen',
     
     // Footer
     'footer.contact': 'Kontaktieren Sie uns',

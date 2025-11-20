@@ -45,16 +45,16 @@ export default function AboutSection() {
               {/* Key Values */}
               <div className="mt-8 grid grid-cols-3 gap-4">
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                  <div className="text-3xl font-bold text-primary mb-1">15+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-3xl font-bold text-primary mb-1">5+</div>
+                  <div className="text-sm text-muted-foreground">{t('about.stats.experience')}</div>
                 </div>
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                  <div className="text-3xl font-bold text-primary mb-1">500+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
+                  <div className="text-3xl font-bold text-primary mb-1">200+</div>
+                  <div className="text-sm text-muted-foreground">{t('about.stats.clients')}</div>
                 </div>
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
                   <div className="text-3xl font-bold text-primary mb-1">100%</div>
-                  <div className="text-sm text-muted-foreground">Transparency</div>
+                  <div className="text-sm text-muted-foreground">{t('about.stats.transparency')}</div>
                 </div>
               </div>
             </div>

@@ -105,24 +105,16 @@ export default function ReviewsSection() {
 
           {/* Trust Indicators */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-            <div className="p-6 bg-background rounded-xl">
-              <div className="text-4xl font-bold text-primary mb-2">5+</div>
-              <div className="text-sm text-muted-foreground">
-                {language === 'ru' ? 'Лет опыта' : language === 'de' ? 'Jahre Erfahrung' : 'Year Experience'}
+            {[
+              { value: '5+', label: t('about.stats.experience') },
+              { value: '250+', label: t('about.stats.clients') },
+              { value: '100%', label: t('reviews.stats.success') },
+            ].map((stat) => (
+              <div key={stat.value} className="p-6 bg-background rounded-xl">
+                <div className="text-4xl font-bold text-primary mb-2">{stat.value}</div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
-            </div>
-            <div className="p-6 bg-background rounded-xl">
-              <div className="text-4xl font-bold text-primary mb-2">250+</div>
-              <div className="text-sm text-muted-foreground">
-                {language === 'ru' ? 'Довольных клиентов' : language === 'de' ? 'Zufriedene Kunden' : 'Happy Clients'}
-              </div>
-            </div>
-            <div className="p-6 bg-background rounded-xl">
-              <div className="text-4xl font-bold text-primary mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">
-                {language === 'ru' ? 'Успешных сделок' : language === 'de' ? 'Erfolgreiche Transaktionen' : 'Successful Deals'}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
