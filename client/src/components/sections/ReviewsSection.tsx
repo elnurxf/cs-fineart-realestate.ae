@@ -108,13 +108,13 @@ export default function ReviewsSection() {
             <div className="p-6 bg-background rounded-xl">
               <div className="text-4xl font-bold text-primary mb-2">5+</div>
               <div className="text-sm text-muted-foreground">
-                {language === 'ru' ? 'Довольных клиентов' : language === 'de' ? 'Zufriedene Kunden' : 'Happy Clients'}
+                {language === 'ru' ? 'Лет опыта' : language === 'de' ? 'Jahre Erfahrung' : 'Year Experience'}
               </div>
             </div>
             <div className="p-6 bg-background rounded-xl">
               <div className="text-4xl font-bold text-primary mb-2">250+</div>
               <div className="text-sm text-muted-foreground">
-                {language === 'ru' ? 'Лет опыта' : language === 'de' ? 'Jahre Erfahrung' : 'Years Experience'}
+                {language === 'ru' ? 'Довольных клиентов' : language === 'de' ? 'Zufriedene Kunden' : 'Happy Clients'}
               </div>
             </div>
             <div className="p-6 bg-background rounded-xl">

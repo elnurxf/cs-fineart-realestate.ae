@@ -78,16 +78,31 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch('/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // Here you would send the data to your backend
-      console.log('Booking data:', formData);
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData?.error || 'Failed to submit booking form.');
+      }
 
-      // Show success message and close
       alert(content.success);
       setFormData({ name: '', email: '', phone: '', preferredDate: '', message: '' });
       onOpenChange(false);
+    } catch (error) {
+      console.error('Booking form submission failed', error);
+      alert(
+        language === 'ru'
+          ? 'Не удалось отправить запрос. Попробуйте позже.'
+          : language === 'de'
+          ? 'Anfrage konnte nicht gesendet werden. Bitte später erneut versuchen.'
+          : 'We could not send your request. Please try again later.'
+      );
     } finally {
       setIsSubmitting(false);
     }

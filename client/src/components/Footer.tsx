@@ -11,20 +11,61 @@ import LegalModal from './LegalModal';
 export default function Footer() {
   const { t, language } = useLanguage();
   const [formData, setFormData] = useState({ name: '', contact: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [privacyModalOpen, setPrivacyModalOpen] = useState(false);
   const [termsModalOpen, setTermsModalOpen] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast.success(
-      language === 'ru' 
-        ? 'Спасибо! Мы свяжемся с вами в ближайшее время.'
-        : language === 'de'
-        ? 'Vielen Dank! Wir werden uns in Kürze bei Ihnen melden.'
-        : 'Thank you! We will contact you shortly.'
-    );
-    setFormData({ name: '', contact: '' });
+    if (isSubmitting) return;
+
+    const contactValue = formData.contact.trim();
+    const isEmail = contactValue.includes('@');
+
+    const payload = {
+      name: formData.name.trim(),
+      email: isEmail ? contactValue : 'no-reply@fineart-realestate.ae',
+      phone: isEmail ? 'Not provided' : contactValue,
+      preferredDate: new Date().toISOString(),
+      message: `Footer contact request. Provided contact: ${contactValue}`,
+    };
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+
+      toast.success(
+        language === 'ru'
+          ? 'Спасибо! Мы свяжемся с вами в ближайшее время.'
+          : language === 'de'
+          ? 'Vielen Dank! Wir werden uns in Kürze bei Ihnen melden.'
+          : 'Thank you! We will contact you shortly.'
+      );
+      setFormData({ name: '', contact: '' });
+    } catch (error) {
+      console.error('Footer contact form submission failed', error);
+      toast.error(
+        language === 'ru'
+          ? 'Не удалось отправить запрос. Попробуйте позже.'
+          : language === 'de'
+          ? 'Anfrage konnte nicht gesendet werden. Bitte später erneut versuchen.'
+          : 'We could not send your request. Please try again later.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -125,7 +166,7 @@ export default function Footer() {
               <h4 className="text-lg font-bold mb-4">
                 {language === 'ru' ? 'Связаться' : language === 'de' ? 'Kontakt' : 'Get in Touch'}
               </h4>
-              <form onSubmit={(e) => { e.preventDefault(); setBookingModalOpen(true); }} className="space-y-3">
+              <form onSubmit={handleSubmit} className="space-y-3">
                 <Input
                   type="text"
                   placeholder={t('footer.name')}
@@ -144,7 +185,8 @@ export default function Footer() {
                 />
                 <Button
                   type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  disabled={isSubmitting}
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {t('footer.submit')}
                 </Button>
