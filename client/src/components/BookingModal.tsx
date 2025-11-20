@@ -28,8 +28,8 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
 
   const bookingContent = {
     en: {
-      title: 'Reserve Your Call',
-      description: 'Book a personal consultation with our real estate experts',
+      title: 'Book your consultation',
+      description: 'Submit a request, and receive professional guidance for all your real estate concerns',
       name: 'Full Name',
       email: 'Email Address',
       phone: 'Phone Number',
@@ -39,8 +39,8 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
       success: 'Thank you! We will contact you shortly.',
     },
     ru: {
-      title: 'Забронировать звонок',
-      description: 'Запишитесь на личную консультацию с нашими экспертами',
+      title: 'Запишитесь на консультацию',
+      description: 'Оставьте заявку и получите профессиональную консультацию по всем вопросам недвижимости.',
       name: 'Полное имя',
       email: 'Email адрес',
       phone: 'Номер телефона',
@@ -50,8 +50,8 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
       success: 'Спасибо! Мы свяжемся с вами в ближайшее время.',
     },
     de: {
-      title: 'Anruf reservieren',
-      description: 'Buchen Sie eine persönliche Beratung mit unseren Immobilienexperten',
+      title: 'Buche dein Beratungsgespräch',
+      description: 'Senden Sie eine Anfrage und erhalten Sie professionelle Beratung zu all Ihren Immobilienangelegenheiten',
       name: 'Vollständiger Name',
       email: 'E-Mail-Adresse',
       phone: 'Telefonnummer',
