@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { X } from 'lucide-react';
@@ -194,6 +194,21 @@ export default function LegalModal({ type, open, onOpenChange }: LegalModalProps
   };
 
   const legalContent = content[type][language] || content[type].en;
+
+  useEffect(() => {
+    if (!open) return;
+    
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onOpenChange(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [open, onOpenChange]);
 
   if (!open) return null;
 
