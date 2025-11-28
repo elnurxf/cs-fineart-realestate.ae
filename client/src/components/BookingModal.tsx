@@ -139,9 +139,9 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
       />
 
       {/* Modal Content */}
-      <div className="relative z-[9999] bg-background rounded-2xl shadow-2xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+      <div className="relative z-[9999] bg-background rounded-2xl shadow-2xl max-w-md w-full mx-4 max-h-[90vh] overflow-hidden flex flex-col">
         {/* Header */}
-        <div className="sticky top-0 bg-background border-b border-border px-6 py-4 flex items-center justify-between">
+        <div className="flex-shrink-0 bg-background border-b border-border px-6 py-4 flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-bold text-primary">{content.title}</h2>
             <p className="text-sm text-muted-foreground mt-1">{content.description}</p>
@@ -155,7 +155,7 @@ export default function BookingModal({ open, onOpenChange }: BookingModalProps) 
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-6 space-y-4">
           <div>
             <label className="block text-sm font-medium text-foreground mb-2">
               {content.name}

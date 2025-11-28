@@ -221,9 +221,9 @@ export default function LegalModal({ type, open, onOpenChange }: LegalModalProps
       />
 
       {/* Modal Content */}
-      <div className="relative z-[1000] bg-background rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="relative z-[1000] bg-background rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-hidden flex flex-col">
         {/* Header */}
-        <div className="sticky top-0 bg-background border-b border-border px-6 py-4 flex items-center justify-between">
+        <div className="flex-shrink-0 bg-background border-b border-border px-6 py-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold text-primary">{legalContent.title}</h2>
           <button
             onClick={() => onOpenChange(false)}
@@ -234,7 +234,7 @@ export default function LegalModal({ type, open, onOpenChange }: LegalModalProps
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-6">
+        <div className="flex-1 overflow-y-auto p-6 space-y-6">
           {legalContent.sections.map((section, index) => (
             <div key={index}>
               <h3 className="text-lg font-semibold text-foreground mb-2">{section.heading}</h3>
@@ -244,7 +244,7 @@ export default function LegalModal({ type, open, onOpenChange }: LegalModalProps
         </div>
 
         {/* Footer */}
-        <div className="sticky bottom-0 bg-background border-t border-border px-6 py-4">
+        <div className="flex-shrink-0 bg-background border-t border-border px-6 py-4">
           <Button
             onClick={() => onOpenChange(false)}
             className="w-full bg-primary hover:bg-primary/90"
