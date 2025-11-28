@@ -80,9 +80,6 @@ export default function WhyDubaiSection() {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               {t('whyDubai.title')}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Discover why Dubai is the perfect destination for your real estate investment
-            </p>
           </div>
 
           {/* Benefits Grid */}

@@ -85,6 +85,13 @@ export default function Footer() {
                   ? 'Ihr zuverlässiger Partner in der Welt der Immobilien in Dubai'
                   : 'Your trusted partner in Dubai real estate'}
               </p>
+              <p className="text-background/70 text-sm mb-4">
+                {language === 'ru' 
+                  ? 'ЛИЦЕНЗИРОВАННЫЙ БРОКЕР · RERA НО. 1556657'
+                  : language === 'de'
+                  ? 'LIZENZIERTER MAKLER · RERA-NR. 1556657'
+                  : 'LICENSED BROKER · RERA NO. 1556657'}
+              </p>
               {/* Social Links */}
               <div className="flex items-center space-x-4">
                 <a
@@ -145,7 +152,7 @@ export default function Footer() {
                 {language === 'ru' ? 'Быстрые ссылки' : language === 'de' ? 'Schnelllinks' : 'Quick Links'}
               </h4>
               <ul className="space-y-2">
-                {['about', 'services', 'why-dubai', 'properties', 'faq'].map((section) => (
+                {['about', 'services', 'why-dubai', 'partners', 'properties', 'faq', 'reviews'].map((section) => (
                   <li key={section}>
                     <button
                       onClick={() => {

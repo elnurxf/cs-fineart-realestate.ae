@@ -60,7 +60,6 @@ const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.zoom': 'YOUR PERSONAL CALL',
     'nav.about': 'ABOUT US',
-    'nav.aboutShort': 'ABOUT',
     'nav.services': 'SERVICES',
     'nav.whyDubai': 'WHY DUBAI?',
     'nav.partners': 'PARTNERS',
@@ -106,7 +105,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.visa.desc': 'We support you throughout the visa process: from initial consultation to document preparation, making the procedure as simple and efficient as possible.',
     
     // Why Dubai
-    'whyDubai.title': 'Why Dubai?',
+    'whyDubai.title': 'Discover why Dubai is the ultimate destination for premium real estate investment',
     'whyDubai.cta': 'Ready to invest in Dubai\'s thriving real estate market?',
     'whyDubai.installments.title': '0% Installments',
     'whyDubai.installments.desc': 'Interest-free installments throughout the entire construction period.',
@@ -154,7 +153,6 @@ const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.zoom': 'ВАША ПЕРСОНАЛЬНАЯ КОНСУЛЬТАЦИЯ',
     'nav.about': 'О НАС',
-    'nav.aboutShort': 'О НАС',
     'nav.services': 'УСЛУГИ',
     'nav.whyDubai': 'ПОЧЕМУ ДУБАЙ?',
     'nav.partners': 'ПАРТНЕРЫ',
@@ -200,7 +198,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.visa.desc': 'Сопровождаем вас в процессе оформления визы: от консультаций до подготовки документов, делая процедуру максимально простой и быстрой.',
     
     // Why Dubai
-    'whyDubai.title': 'Почему Дубай?',
+    'whyDubai.title': 'Узнайте, почему Дубай является идеальным местом для инвестиций в элитную недвижимость.',
     'whyDubai.cta': 'Готовы инвестировать в процветающий рынок недвижимости Дубая?',
     'whyDubai.installments.title': '0% рассрочка',
     'whyDubai.installments.desc': 'Беспроцентная рассрочка на весь срок строительства.',
@@ -248,7 +246,6 @@ const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.zoom': 'IHR PERSÖNLICHES GESPRÄCH',
     'nav.about': 'ÜBER UNS',
-    'nav.aboutShort': 'ÜBER',
     'nav.services': 'LEISTUNGEN',
     'nav.whyDubai': 'WARUM DUBAI?',
     'nav.partners': 'PARTNER',
@@ -294,7 +291,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.visa.desc': 'Wir begleiten Sie beim gesamten Visaprozess - von der Beratung bis zur Dokumentenvorbereitung - und machen das Verfahren so einfach und effizient wie möglich.',
     
     // Why Dubai
-    'whyDubai.title': 'Warum Dubai?',
+    'whyDubai.title': 'Entdecken Sie, warum Dubai das ultimative Ziel für Premium-Immobilieninvestitionen ist.',
     'whyDubai.cta': 'Sind Sie bereit, in den florierenden Immobilienmarkt Dubais zu investieren?',
     'whyDubai.installments.title': '0% Ratenzahlung',
     'whyDubai.installments.desc': 'Zinsfreie Ratenzahlung während der gesamten Bauphase.',

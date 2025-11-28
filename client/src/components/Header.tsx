@@ -28,7 +28,7 @@ export default function Header() {
   };
 
   const navItems = [
-    { id: 'about', label: t('nav.aboutShort') },
+    { id: 'about', label: t('nav.about') },
     { id: 'services', label: t('nav.services') },
     { id: 'why-dubai', label: t('nav.whyDubai') },
     { id: 'partners', label: t('nav.partners') },

@@ -94,7 +94,6 @@
 
 
 ## Final Fixes
-- [x] Add missing translation for nav.aboutShort in English
 - [x] Update hero title to "Premium Real Estate in Dubai"
 
 
