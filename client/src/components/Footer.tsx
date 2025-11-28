@@ -121,7 +121,7 @@ export default function Footer() {
                 <div className="flex items-start space-x-3">
                   <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-background/70 text-sm">Email</p>
+                    <p className="text-background/70 text-sm">{t('footer.email')}</p>
                     <a href="mailto:info@fineart-realestate.ae" className="text-background/90 hover:text-primary transition-colors">
                       info@fineart-realestate.ae
                     </a>
@@ -130,7 +130,7 @@ export default function Footer() {
                 <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-background/70 text-sm">Phone</p>
+                    <p className="text-background/70 text-sm">{t('footer.phoneLabel')}</p>
                     <a href="tel:+971589559060" className="text-background/90 hover:text-primary transition-colors">
                       +971 58 955 9060
                     </a>
@@ -139,8 +139,8 @@ export default function Footer() {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-background/70 text-sm">Location</p>
-                    <p className="text-background/90">Dubai, UAE</p>
+                    <p className="text-background/70 text-sm">{t('footer.location')}</p>
+                    <p className="text-background/90">{t('footer.locationValue')}</p>
                   </div>
                 </div>
               </div>

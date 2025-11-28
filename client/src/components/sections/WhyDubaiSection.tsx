@@ -91,13 +91,10 @@ export default function WhyDubaiSection() {
                   key={index}
                   className="group bg-background rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-primary/20 hover:border-primary"
                 >
-                  {/* Icon & Number */}
-                  <div className="flex items-center justify-between mb-4">
+                  {/* Icon */}
+                  <div className="mb-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                       <Icon className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors" />
-                    </div>
-                    <div className="text-3xl font-bold text-primary">
-                      {benefit.number}
                     </div>
                   </div>
 

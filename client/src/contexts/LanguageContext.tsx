@@ -144,6 +144,10 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.phone': 'Phone / Email',
     'footer.submit': 'Get Consultation',
     'footer.copyright': '© 2025 Fine Art Real Estate. All rights reserved.',
+    'footer.email': 'Email',
+    'footer.phoneLabel': 'Phone',
+    'footer.location': 'Location',
+    'footer.locationValue': 'Dubai, UAE',
     
     // Legal
     'legal.privacy': 'Privacy Policy',
@@ -237,6 +241,10 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.phone': 'Телефон / Email',
     'footer.submit': 'Получить консультацию',
     'footer.copyright': '© 2025 Fine Art Real Estate. Все права защищены.',
+    'footer.email': 'Электронная почта',
+    'footer.phoneLabel': 'Телефон',
+    'footer.location': 'Местоположение',
+    'footer.locationValue': 'Дубай, ОАЭ',
     
     // Legal
     'legal.privacy': 'Политика конфиденциальности',
@@ -330,6 +338,10 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.phone': 'Telefon / E-Mail',
     'footer.submit': 'Beratung erhalten',
     'footer.copyright': '© 2025 Fine Art Real Estate. Alle Rechte vorbehalten.',
+    'footer.email': 'E-Mail',
+    'footer.phoneLabel': 'Telefon',
+    'footer.location': 'Standort',
+    'footer.locationValue': 'Dubai, VAE',
     
     // Legal
     'legal.privacy': 'Datenschutzrichtlinie',
